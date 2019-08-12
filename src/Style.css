@@ -4,8 +4,8 @@ body{
 }
 
 .navbar-menu a:hover{
-    border-bottom: 1px solid #f85e9f;
+    color: #f18fac;
 }
 .active{
-    border-bottom: 1px solid #f85e9f;
+    color: #f85e9f;
 }

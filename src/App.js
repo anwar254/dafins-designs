@@ -9,7 +9,7 @@ import Main from './components/master';
 import TopNav from './components/topHeader';
 import BottomNav from './components/bottomHeader';
 import Home from './components/home'
-import Login from './components/login'
+import About from './components/about'
 
 const theme = {
   font: 'Work Sans',
@@ -25,10 +25,10 @@ function App() {
           <TopNav />
         </ThemeProvider>
         <Router>
+          <Route component={BottomNav} />
           <Switch>
-            <Route component={BottomNav} />
             <Route exact path="/" component={Home}/>
-            <Route exact path="/session/login" component={Login}/>
+            <Route exact strict path="/about" component={About}/>
           </Switch>
         </Router>
       </Main>

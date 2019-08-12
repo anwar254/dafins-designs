@@ -27,7 +27,7 @@ function BottomNav(){
                             <div className="navbar-item has-dropdown is-hoverable">
                                 <NavLink to="" activeClassName="active" className="navbar-link">All Products</NavLink>
                                 <div className="navbar-dropdown">
-                                    <Link to="/session/login" className="navbar-item">About</Link>
+                                    <Link to="" className="navbar-item">About</Link>
                                     <Link to="" className="navbar-item">About</Link>
                                     <Link to="" className="navbar-item">About</Link>
                                     <Link to="" className="navbar-item">About</Link>
