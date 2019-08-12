@@ -1,24 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from 'styled-components';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+
+import 'bulma/css/bulma.css'
+
+import Main from './components/master';
+// import HeaderText from  './components/titles';
+import TopNav from './components/topHeader';
+import BottomNav from './components/bottomHeader';
+import Home from './components/home'
+import Login from './components/login'
+
+const theme = {
+  font: 'Work Sans',
+  fontTwo: 'Montserrat',
+  primaryFont: true
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Main>
+        <ThemeProvider theme={theme}>
+          <TopNav />
+        </ThemeProvider>
+        <Router>
+          <Switch>
+            <Route component={BottomNav} />
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/session/login" component={Login}/>
+          </Switch>
+        </Router>
+      </Main>
     </div>
   );
 }
