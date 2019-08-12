@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import {NavLink, Link} from 'react-router-dom'
 
 const MainNav = styled.nav`
     background-color: #fff;
@@ -25,7 +25,7 @@ function BottomNav(){
                     <div className="navbar-menu">
                         <div className="navbar-end">
                             <div className="navbar-item has-dropdown is-hoverable">
-                                <Link to="" className="navbar-link">All Products</Link>
+                                <NavLink to="" activeClassName="active" className="navbar-link">All Products</NavLink>
                                 <div className="navbar-dropdown">
                                     <Link to="/session/login" className="navbar-item">About</Link>
                                     <Link to="" className="navbar-item">About</Link>
@@ -33,11 +33,12 @@ function BottomNav(){
                                     <Link to="" className="navbar-item">About</Link>
                                 </div>
                             </div>
-                            <Link to="/" className="navbar-item">About</Link>
-                            <Link to="/" className="navbar-item">About</Link>
-                            <Link to="/" className="navbar-item">About</Link>
-                            <Link to="/" className="navbar-item">About</Link>
-                            <Link to="/" className="navbar-item">About</Link>
+                            <NavLink to="/about" className="navbar-item">About</NavLink>
+                            <NavLink to="/category/business-cards" className="navbar-item">Bussiness Cards</NavLink>
+                            <NavLink to="/cartegory/logo-design" className="navbar-item">Logo Designs</NavLink>
+                            <NavLink to="/instant-quote" className="navbar-item">Get a Quote</NavLink>
+                            <NavLink to="/weddings" className="navbar-item">Wedding</NavLink>
+                            <NavLink to="/contacts" className="navbar-item">Contact Us</NavLink>
                         </div>
                     </div>
                 </div>

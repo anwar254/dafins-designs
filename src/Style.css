@@ -2,3 +2,10 @@ body{
     color: #4a4a4a;
     background-color: #eeeeee
 }
+
+.navbar-menu a:hover{
+    border-bottom: 1px solid #f85e9f;
+}
+.active{
+    border-bottom: 1px solid #f85e9f;
+}
