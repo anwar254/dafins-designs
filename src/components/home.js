@@ -3,7 +3,8 @@ import styled, {ThemeProvider} from 'styled-components'
 
 import Hero from './hero'
 import Paragraph from './paragraph'
-import Link from './link'
+import InfoService from './infoService'
+import { Link } from 'react-router-dom';
 
 const HeroInfo = styled.div`
     padding: 10px;
@@ -25,20 +26,24 @@ function Home(){
         <div className="home-wrapper">
             <Hero>
                 <div className="columns">
-                    <div className="column is-three-quarters">
+                    <div className="column">
                         <HeroInfo >
                             <HeroTitle>Flaunt your business</HeroTitle>
                             <ThemeProvider theme={theme}>
-                                <Paragraph>Order top quality business cards that are as unique as you for as low as N5,499 for a pack of 100 copies</Paragraph>
-                                {/* <Link linkName="order now"/> */}
+                                <Paragraph>Order top quality business cards that are as unique as you for as low as $$$$$ for a pack of 100 copies</Paragraph>
                             </ThemeProvider>
+                            <Link to="" className="button is-info sd-button">Order Now</Link>
                         </HeroInfo> 
                     </div>
                     <div className="column">
-                        this is the heading
+                        Image should be here
                     </div>
                 </div>
             </Hero>
+
+            <section>
+                <InfoService/>
+            </section>
         </div>
     )
 }

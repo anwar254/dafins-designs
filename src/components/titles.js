@@ -5,5 +5,6 @@ export default styled.h1`
     text-align: center;
     color: #4a4a4a;
     font-size: 25px;
-    text-transform: ${props => (props.upper ? 'uppercase' : 'inherit')}
+    text-transform: ${props => (props.upper ? 'uppercase' : 'inherit')};
+    margin-bottom: 10px;
 `;

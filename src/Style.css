@@ -3,9 +3,27 @@ body{
     background-color: #eeeeee
 }
 
+.center{
+    text-align: center;
+}
 .navbar-menu a:hover{
     color: #f18fac;
 }
 .active{
     color: #f85e9f;
+}
+button:focus, input:focus{
+    outline: none;
+}
+.hero-wrapper{
+    padding: 50px 0;
+}
+.sd-button{
+    background-color: #5d50c6!important;
+    border-radius: 0;
+    padding: 10px 48px!important;
+    margin-top: 20px;
+}
+.services{
+    margin-top: 20px;
 }
