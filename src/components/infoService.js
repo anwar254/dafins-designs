@@ -23,7 +23,7 @@ const ServiceIcon = styled.div`
 function InfoService(){
     return(
         <div className="info-service">
-            <InfoWrapper>
+            <InfoWrapper className="padd-wrapper">
                 <div className="container">
                     <Title>We are one-stop shop for all your printing needs.</Title>
                     <Paragraph>We are Number 1 at quick and high quality prints. Be it business cards, banners, corporate gifts, wedding stationery.

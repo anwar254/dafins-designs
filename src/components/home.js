@@ -1,10 +1,12 @@
 import React from 'react'
 import styled, {ThemeProvider} from 'styled-components'
+import { Link } from 'react-router-dom';
 
 import Hero from './hero'
 import Paragraph from './paragraph'
 import InfoService from './infoService'
-import { Link } from 'react-router-dom';
+import Featured from './featured'
+import Footer from './footer'
 
 const HeroInfo = styled.div`
     padding: 10px;
@@ -43,7 +45,12 @@ function Home(){
 
             <section>
                 <InfoService/>
+                <Featured/>
             </section>
+
+            <footer>
+                <Footer />
+            </footer>
         </div>
     )
 }
