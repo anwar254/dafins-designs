@@ -10,6 +10,7 @@ import TopNav from './components/topHeader';
 import BottomNav from './components/bottomHeader';
 import Home from './components/home'
 import About from './components/about'
+import Products from './components/cartegories/allCartegories'
 
 const theme = {
   font: 'Work Sans',
@@ -29,6 +30,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route exact strict path="/about" component={About}/>
+            <Route exact strict path="/all-products" component={Products}/>
           </Switch>
         </Router>
       </Main>

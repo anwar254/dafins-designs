@@ -42,3 +42,13 @@ button:focus, input:focus{
 .services{
     margin-top: 20px;
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}

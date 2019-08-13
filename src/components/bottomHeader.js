@@ -9,7 +9,7 @@ const MainNav = styled.nav`
 
 function BottomNav(){
     return(
-        <MainNav>
+        <MainNav id="main-header">
             <div className="container isFluid">
                 <div className="navbar" role="navigation" aria-label="main navigation">
                     <div className="navbar-brand">
@@ -25,12 +25,18 @@ function BottomNav(){
                     <div className="navbar-menu">
                         <div className="navbar-end">
                             <div className="navbar-item has-dropdown is-hoverable">
-                                <NavLink to="" activeClassName="active" className="navbar-link">All Products</NavLink>
+                                <NavLink to="/all-products" activeClassName="active" className="navbar-link">All Products</NavLink>
                                 <div className="navbar-dropdown">
-                                    <Link to="" className="navbar-item">About</Link>
-                                    <Link to="" className="navbar-item">About</Link>
-                                    <Link to="" className="navbar-item">About</Link>
-                                    <Link to="" className="navbar-item">About</Link>
+                                    <Link to="/cartegry/business-cards" className="navbar-item">Business Cards</Link>
+                                    <Link to="/cartegry/" className="navbar-item">Letterhead</Link>
+                                    <Link to="/cartegry/" className="navbar-item">Posters</Link>
+                                    <Link to="/cartegry/" className="navbar-item">Custom Mugs</Link>
+                                    <Link to="/cartegry/" className="navbar-item">Stickers</Link>
+                                    <Link to="/cartegry/" className="navbar-item">Greeting Card</Link>
+                                    <Link to="/cartegry/" className="navbar-item">Caps and Hats</Link>
+                                    <Link to="/cartegry/" className="navbar-item">Custom Tshirts</Link>
+                                    <Link to="/cartegry/" className="navbar-item">Calendars</Link>
+                                    <Link to="/cartegry/" className="navbar-item">Banners and large formats</Link>
                                 </div>
                             </div>
                             <NavLink to="/about" className="navbar-item">About</NavLink>
